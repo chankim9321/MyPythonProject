@@ -29,16 +29,16 @@ int main(int argc, char* argv[]){
 	for(int i=1; i<n+1; i++){ // 합집합 정보 배열 초기화
 		union_info[i]=i;
 	}
+	queue<char*>result; // 문자열 버퍼 큐
 	for(int k=0; k<m; k++){
 		int proc,a,b;
-		queue<char*>result; // 문자열 버퍼 큐
 		scanf("%d %d %d",&proc,&a,&b);
-		getchar()!
+		getchar();
 		if(proc==0){ // 합집합 연산이라면 
 			set_union(union_info,a,b); // 합집합 연산 수행
 		}
 		else if(proc==1){
-			if(find_union(union_info,a,b){
+			if(find_union(union_info,a,b)){
 				result.push("YES");
 			}
 			else {
@@ -50,6 +50,6 @@ int main(int argc, char* argv[]){
 		printf("%s\n",result.front());
 		result.pop();
 	}
-
-	
+	free(union_info);	
+	return 0;
 }
