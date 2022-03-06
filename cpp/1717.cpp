@@ -39,17 +39,16 @@ int main(int argc, char* argv[]){
 		}
 		else if(proc==1){
 			if(find_union(union_info,a,b)){
-				result.push("YES");
+				result.push((char*)"YES");
 			}
 			else {
-				result.push("NO");
+				result.push((char*)"NO");
 			}
 		}
 	}
-	while(result.empty()){ // 마지막에 큐 내용 출력
-		printf("%s\n",result.front());
+	while(!result.empty()){ // 마지막에 큐 내용 출력
+		printf((char*)"%s\n",result.front());
 		result.pop();
 	}
 	free(union_info);	
-	return 0;
 }
