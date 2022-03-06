@@ -39,10 +39,10 @@ int main(int argc, char* argv[]){
 		}
 		else if(proc==1){
 			if(find_union(union_info,a,b){
-				printf("YES\n");		
+				result.push("YES");
 			}
-			else if(){
-				printf("NO\n);	
+			else {
+				result.push("NO");
 			}
 		}
 	{
