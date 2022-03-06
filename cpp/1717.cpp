@@ -45,6 +45,11 @@ int main(int argc, char* argv[]){
 				result.push("NO");
 			}
 		}
-	{
+	}
+	while(result.empty()){ // 마지막에 큐 내용 출력
+		printf("%s\n",result.front());
+		result.pop();
+	}
+
 	
 }
