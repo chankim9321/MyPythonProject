@@ -31,6 +31,7 @@ int main(int argc, char* argv[]){
 	}
 	for(int k=0; k<m; k++){
 		int proc,a,b;
+		queue<char*>result; // 문자열 버퍼 큐
 		scanf("%d %d %d",&proc,&a,&b);
 		getchar()!
 		if(proc==0){ // 합집합 연산이라면 
